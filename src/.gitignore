@@ -1,0 +1,13 @@
+/napkin
+/napkin.o
+/.deps
+/.libs
+/schema.cc
+/schema.o
+/db.o
+/dialogs.o
+/sleep_history.o
+/sleep_timeline.o
+/widgets.o
+/COPYING.cc
+/COPYING.o

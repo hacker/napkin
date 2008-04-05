@@ -1,0 +1,11 @@
+/.deps
+/.libs
+/st-decode.lo
+/st-decode.o
+/libnapkin.la
+/st-download.lo
+/st-download.o
+/hypnodata.lo
+/hypnodata.o
+/util.lo
+/util.o
