@@ -15,6 +15,7 @@ namespace napkin {
 	struct st_date_t {
 	    uint8_t month;
 	    uint8_t day;
+	    uint8_t dow;
 	};
 	struct st_fulltime_t {
 	    uint8_t hour;
@@ -24,7 +25,6 @@ namespace napkin {
 	struct st_data_header_t {
 	    char magic;
 	    st_date_t today;
-	    uint8_t unknown;
 	    uint8_t window;
 	    st_time_t to_bed;
 	    st_time_t alarm;
