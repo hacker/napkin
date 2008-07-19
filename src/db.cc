@@ -17,11 +17,30 @@ namespace napkin {
 	    datadir = h;
 	    datadir += "/."PACKAGE_NAME"/";
 	}else{
+#if defined(HAVE_GET_CURRENT_DIR_NAME)
 	    char *cwd = get_current_dir_name();
 	    if(!cwd)
 		throw napkin::exception("failed to get_current_dir_name()");
 	    datadir = cwd;
 	    free(cwd);
+#elif defined(HAVE_GETCWD)
+	    {
+		char cwd[
+# if defined(MAXPATH)
+		    MAXPATH
+# elif defined(MAXPATHLEN)
+		    MAXPATHLEN
+# else /* maxpath */
+		    512
+#endif /* maxpath */
+		];
+		if(!getcwd(cwd,sizeof(cwd)))
+		    throw napkin::exception("failed to getcwd()");
+		datadir = cwd;
+	    }
+#else /* get cwd */
+# error dunno how to get current workdir
+#endif /* get cwd */
 	    datadir += "/."PACKAGE_NAME"/";
 	}
 	if(access(datadir.c_str(),R_OK|W_OK)

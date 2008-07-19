@@ -10,6 +10,10 @@ AC_PROG_CC
 AC_PROG_LIBTOOL
 PKG_PROG_PKG_CONFIG
 
+onegetcwd=false
+AC_CHECK_FUNCS([get_current_dir_name getcwd],[onegetcwd=true;break])
+$onegetcwd || AC_MSG_ERROR([no function to get current directory found. weird.])
+
 AC_HEADER_STDC
 
 AC_PATH_PROG([XSLTPROC],[xsltproc],[true])
