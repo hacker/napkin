@@ -32,7 +32,7 @@ namespace napkin {
 		    MAXPATHLEN
 # else /* maxpath */
 		    512
-#endif /* maxpath */
+# endif /* maxpath */
 		];
 		if(!getcwd(cwd,sizeof(cwd)))
 		    throw napkin::exception("failed to getcwd()");
