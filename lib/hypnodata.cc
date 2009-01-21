@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <string.h>
 #include <napkin/exception.h>
 #include <napkin/util.h>
 #include <napkin/types.h>
