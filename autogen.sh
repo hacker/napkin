@@ -1,6 +1,7 @@
 #!/bin/sh
 test -d aux.d || mkdir aux.d
-   aclocal \
+   libtoolize -f \
+&& aclocal \
 && autoheader \
 && automake -a \
 && autoconf \
