@@ -6,10 +6,10 @@ namespace napkin {
 
 	hypnoinfo_t::hypnoinfo_t()
 	    : w_upper(4,3,false/*homogeneous*/),
-	    lc_tobed("To bed:",0.5,0.5),
-	    lc_timeline("Sleep timeline:",0.5,0.5),
-	    lc_alarm("Alarm:",0.5,0.5), lc_window("Window:",0.5,0.5),
-	    l_data_a("",0.9,0.5)
+	    lc_tobed("To bed:",0.5f,0.5f),
+	    lc_timeline("Sleep timeline:",0.5f,0.5f),
+	    lc_alarm("Alarm:",0.5f,0.5f), lc_window("Window:",0.5f,0.5f),
+	    l_data_a("",0.9f,0.5f)
 	{
 	    add(l_date);
 	    add(l_hseparator);

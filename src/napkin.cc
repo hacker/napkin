@@ -49,7 +49,7 @@ class napkin_ui : public Gtk::Window {
 	napkin_ui()
 	    : w_history(db)
 	{
-	    static char *ui_info =
+	    static const char *ui_info =
 		"<ui>"
 		 "<menubar name='menu_bar'>"
 		  "<menu action='menu_sleep'>"
