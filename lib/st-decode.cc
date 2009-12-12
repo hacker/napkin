@@ -1,5 +1,6 @@
-#include <stdlib.h>
-#include <string.h>
+#include <stdint.h>
+#include <cstdlib>
+#include <cstring>
 #include <stdexcept>
 #include <numeric>
 #include <napkin/exception.h>
