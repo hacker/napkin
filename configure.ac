@@ -18,9 +18,7 @@ AC_HEADER_STDC
 
 AC_PATH_PROG([XSLTPROC],[xsltproc],[true])
 
-PKG_CHECK_MODULES([MODULES],[gtkmm-2.4 sqlite3],,[
- AC_MSG_ERROR([not all dependencies could be satisfied])
-])
+PKG_CHECK_MODULES([MODULES],[gtkmm-2.4 sqlite3])
 
 AC_MSG_CHECKING([whether to enable debugging code])
 ndebug=true
