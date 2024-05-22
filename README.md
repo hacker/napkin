@@ -1,3 +1,4 @@
+# The project is discontinued, since the original sleeptracker watch isn't available for ages now and almost every modern watch does it without my help.
 
 Napkin expects you to have sleeptracker port at /dev/sleeptracker
 
